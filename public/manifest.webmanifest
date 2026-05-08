@@ -1,0 +1,17 @@
+{
+  "name": "Finance Controller",
+  "short_name": "FinCtrl",
+  "description": "Personal finance management with forecasting and planning.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#111827",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48 64x64 128x128",
+      "type": "image/x-icon"
+    }
+  ]
+}
