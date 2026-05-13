@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Finance Controller",
+    "slug": "finance-controller-mobile",
+    "scheme": "financecontroller",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-router",
+      "./plugins/with-notification-listener"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "android": {
+      "package": "com.financecontroller.mobile"
+    },
+    "ios": {
+      "bundleIdentifier": "com.financecontroller.mobile"
+    }
+  }
+}

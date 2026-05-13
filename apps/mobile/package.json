@@ -1,0 +1,54 @@
+{
+  "name": "finance-controller-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.19.4",
+    "npm": ">=10"
+  },
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "dev:clear": "expo start --clear",
+    "mobile:dev": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "mobile:android": "expo run:android",
+    "mobile:ios": "expo run:ios",
+    "build:android": "eas build --platform android --profile production",
+    "build:android-apk": "eas build --platform android --profile preview",
+    "build:ios": "eas build --platform ios --profile production",
+    "submit:android": "eas submit --platform android --latest",
+    "submit:ios": "eas submit --platform ios --latest",
+    "web": "expo start --web",
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "@finance-controller/shared": "0.1.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native/assets-registry": "^0.81.5",
+    "@react-native/normalize-colors": "^0.81.5",
+    "@react-native/virtualized-lists": "0.81.5",
+    "@react-navigation/native": "^7.1.18",
+    "@supabase/supabase-js": "^2.105.3",
+    "@tanstack/react-query": "^5.90.3",
+    "date-fns": "^4.1.0",
+    "expo": "^54.0.13",
+    "expo-constants": "^18.0.10",
+    "expo-linking": "^8.0.8",
+    "expo-router": "^6.0.11",
+    "expo-secure-store": "^15.0.8",
+    "expo-status-bar": "^3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "^5.6.0",
+    "react-native-screens": "4.16.0",
+    "webidl-conversions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~10.0.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -2,40 +2,31 @@
   "name": "finance-controller",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+  "engines": {
+    "node": ">=20.19.4",
+    "npm": ">=10"
   },
-  "dependencies": {
-    "@hookform/resolvers": "^5.2.2",
-    "@supabase/ssr": "^0.10.3",
-    "@supabase/supabase-js": "^2.105.3",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
-    "lucide-react": "^1.14.0",
-    "next": "^15.5.6",
-    "next-pwa": "^5.6.0",
-    "next-themes": "^0.4.6",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-hook-form": "^7.75.0",
-    "recharts": "^3.8.1",
-    "sonner": "^2.0.7",
-    "tailwind-merge": "^3.5.0",
-    "zod": "^4.4.3"
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile:dev": "npm run dev -w apps/mobile",
+    "mobile:dev:clear": "npm run dev -w apps/mobile -- --clear",
+    "mobile:android": "npm run android -w apps/mobile",
+    "mobile:ios": "npm run ios -w apps/mobile",
+    "mobile:web": "npm run web -w apps/mobile",
+    "mobile:build:apk": "npm run build:android-apk -w apps/mobile",
+    "android": "npm run android -w apps/mobile",
+    "ios": "npm run ios -w apps/mobile"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/minimatch": "^6.0.0",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "^15.5.6",
-    "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "dependencies": {
+    "expo": "~54.0.34",
+    "react": "19.1.0",
+    "react-native": "0.81.5"
   }
 }
